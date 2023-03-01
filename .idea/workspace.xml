@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af5e052-26fd-4fe8-8375-216226d136dc" name="Changes" comment="-- commit Che/S">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ChangeUserDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChangeUserDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GetOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ChangeUserDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ChangeUserDataTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CreateOrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CreateOrderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CreateUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CreateUserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GetOrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GetOrderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginUserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,14 +42,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/SChernikov/Desktop/Diplom_Semen_Chernikov_14/Diplom_2/Moy_2/Diplom_2/src/main/java/steps&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\SChernikov\Desktop\Diplom_Semen_Chernikov_14\Diplom_2\Moy_2\Diplom_2\src\main\java\steps" />
@@ -45,7 +55,16 @@
       <recent name="C:\Users\SChernikov\Desktop\Diplom_Semen_Chernikov_14\Diplom_2\Moy_2\Diplom_2\src\test\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GetOrderTest">
+    <configuration name="GetOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GetOrderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Diplom_2 [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -72,6 +91,11 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GetOrderTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -102,6 +126,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-- commit Che/S" />

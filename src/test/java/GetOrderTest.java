@@ -16,8 +16,8 @@ import static org.apache.http.HttpStatus.SC_UNAUTHORIZED;
 import static org.junit.Assert.assertEquals;
 
 public class GetOrderTest {
-    UserClient userClient;
-    String accessToken;
+    private UserClient userClient;
+    private String accessToken;
 
     HashMap<String, List> orderHash;
     List<String> ingredients = new ArrayList<>();
@@ -44,9 +44,6 @@ public class GetOrderTest {
     public void tearDown() {
         if (accessToken != null) {
             userClient.deleteUser(user);
-            System.out.println("User deleted");
-        } else {
-            System.out.println("No user to delete");
         }
     }
 
@@ -55,7 +52,7 @@ public class GetOrderTest {
     public void getOrdersLoginUserTest() {
         userOrder = orderClient.getOrderWithLogin(accessToken);
 
-        assertEquals("Код ответа не соответствует 200", SC_OK, userOrder.statusCode());
+        assertEquals("Код ответа не соответствует 200", userOrder.statusCode(), SC_OK);
         assertEquals("Заказ не получен", true, userOrder.path("success"));
     }
 
@@ -64,7 +61,7 @@ public class GetOrderTest {
     public void getOrdersWithNoLoginUserTest() {
         userOrder = orderClient.getOrderWithoutLogin();
 
-        assertEquals("Код ответа не соответствует 401", SC_UNAUTHORIZED, userOrder.statusCode());
+        assertEquals("Код ответа не соответствует 401", userOrder.statusCode(), SC_UNAUTHORIZED);
         assertEquals("You should be authorised", userOrder.path("message"));
     }
 }

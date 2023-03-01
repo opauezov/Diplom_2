@@ -30,9 +30,6 @@ public class CreateUserTest {
         accessToken = userClient.createUser(user).path("accessToken");
         if (accessToken != null) {
             userClient.deleteUser(user);
-            System.out.println("User deleted");
-        } else {
-            System.out.println("No user to delete");
         }
     }
 

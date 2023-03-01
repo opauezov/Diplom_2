@@ -24,9 +24,6 @@ public class ChangeUserDataTest {
     public void tearDown() {
         if (accessToken != null) {
             userClient.deleteUser(user);
-            System.out.println("User deleted");
-        } else {
-            System.out.println("No user to delete");
         }
     }
 

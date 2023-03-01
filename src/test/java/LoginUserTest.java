@@ -30,9 +30,6 @@ public class LoginUserTest {
         accessToken = userClient.createUser(user).path("accessToken");
         if (accessToken != null) {
             userClient.deleteUser(user);
-            System.out.println("User deleted");
-        } else {
-            System.out.println("No user to delete");
         }
     }
 
@@ -41,7 +38,7 @@ public class LoginUserTest {
     public void userLoginSuccess() {
         responseLogin = userClient.loginUser(UserData.from(user));
         int expectedCodResponse = 200;
-        assertEquals("Код ответа не соответствует 200", SC_OK, responseLogin.statusCode());
+        assertEquals("Код ответа не соответствует 200",responseLogin.statusCode(), SC_OK);
     }
 
     @Test
@@ -52,7 +49,7 @@ public class LoginUserTest {
 
         assertEquals("Ошибка. Авторизация с неверным логином", messageInvalidLogin,
                 responseLogin.then().extract().path("message"));
-        assertEquals("Ошибка. неверный код ответа", SC_UNAUTHORIZED, responseLogin.statusCode());
+        assertEquals("Ошибка. неверный код ответа", responseLogin.statusCode(), SC_UNAUTHORIZED);
     }
 
     @Test
@@ -62,6 +59,6 @@ public class LoginUserTest {
         responseLogin = userClient.loginUser(UserData.from(user));
         assertEquals("Ошибка. Авторизация с неверным паролем", messageInvalidLogin,
                 responseLogin.then().extract().path("message"));
-        assertEquals("Ошибка. неверный код ответа", SC_UNAUTHORIZED, responseLogin.statusCode());
+        assertEquals("Ошибка. неверный код ответа", responseLogin.statusCode(), SC_UNAUTHORIZED);
     }
 }
